@@ -12,10 +12,10 @@ class CreateLogAttributesTable extends Migration {
 	public function up() {
 		Schema::create( 'log_attributes', function ( Blueprint $table ) {
 			$table->increments( 'id' );
-			$table->integer( 'index' )->unsigned();
+			$table->integer( 'log_id' )->unsigned();
 			$table->string( 'key' );
 			$table->string( 'value' );
-			$table->foreign( 'index' )->reference( 'index' )->on( 'logs' )->onDelete( 'cascade' );
+			$table->foreign( 'log_id' )->reference( 'id' )->on( 'logs' )->onDelete( 'cascade' );
 			$table->timestamps();
 		} );
 	}

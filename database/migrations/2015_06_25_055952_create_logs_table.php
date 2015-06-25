@@ -12,7 +12,6 @@ class CreateLogsTable extends Migration {
 	public function up() {
 		Schema::create( 'logs', function ( Blueprint $table ) {
 			$table->increments( 'id' );
-			$table->integer( 'index' )->unsigned();
 			$table->time( 'time' );
 			$table->string( 'name' );
 			$table->integer( 'refid' )->nullable();
