@@ -1,5 +1,8 @@
 ## Project Cars Dedicated Server History
 
+This project has been deprecated and the new version will use Google Go.
+New project url: https://github.com/mattias/go-pcdsh
+
 ### Installation
 
 ```
